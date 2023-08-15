@@ -1,0 +1,53 @@
+/*** dash ***/
+.dash-item {
+    height: 200px;
+    width: 150px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    border: 0.1rem solid black;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.dash-item:hover {
+    background: var(--primary);
+}
+
+.dash-item .dash-icon {
+    margin: 0 auto 30px auto;
+    width: 65px;
+    height: 65px;
+    transition: .5s;
+}
+
+.dash-item i,
+.dash-item h5,
+.dash-item p {
+    transition: .5s;
+}
+
+.dash-item:hover i,
+.dash-item:hover h5,
+.dash-item:hover p {
+    color: black !important;
+}
+
+@media screen and (max-width: 480px)
+ {
+    #dashdetails img{
+        height: 50px;
+        width: 50px;
+    }
+    #dashdetails div{
+        margin-bottom: 2rem;
+    }
+    #dashdetails{
+        margin-left: 5rem;
+    }
+ }
+
